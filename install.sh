@@ -7,7 +7,7 @@ SKILLS_DIR="$HOME/.claude/skills"
 
 mkdir -p "$SKILLS_DIR"
 
-skills=(ceo-saas-review growth-review pricing-audit design-saas)
+skills=(ceo-saas-review growth-review pricing-audit design-saas churn-review saas-retro)
 
 for skill in "${skills[@]}"; do
   target="$SKILLS_DIR/$skill"
@@ -22,5 +22,7 @@ echo "  /ceo-saas-review  — CEO review for B2B SaaS features"
 echo "  /growth-review    — Growth audit (activation, retention, expansion)"
 echo "  /pricing-audit    — Pricing strategy and tier architecture"
 echo "  /design-saas      — SaaS design patterns (onboarding, empty states, dashboards)"
+echo "  /churn-review     — Churn diagnosis and one-intervention prescription"
+echo "  /saas-retro       — Sprint retro graded against ARR-moving metrics"
 echo ""
 echo "Start a Claude Code session and type /ceo-saas-review to get started."
